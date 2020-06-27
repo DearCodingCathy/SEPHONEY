@@ -25,7 +25,7 @@
 
 ### Description
 
-_**Sephoney** is a makeup and beauty eccomerce website where you can buy all your beauty needs. Who needs Sephora, when you have Sephoney? 
+**Sephoney** is a makeup and beauty eccomerce website where you can buy all your beauty needs. Who needs Sephora, when you have Sephoney? 
 <br>
 
 ### Wireframes
@@ -33,9 +33,11 @@ _**Sephoney** is a makeup and beauty eccomerce website where you can buy all you
 > Use the Wireframes section to display desktop, tablet and mobile views.
 
 - Webpage Landing
+
 ![https://xd.adobe.com/view/a5a34f61-9465-41a3-80a1-e48f72c8f6c9-f0f0/](url)
 
 - Web Products page
+
 ![https://xd.adobe.com/view/098fb32b-a00b-4730-a64d-911e0f9e0fa4-5cdc/](url)
 
 
@@ -48,9 +50,11 @@ _**Sephoney** is a makeup and beauty eccomerce website where you can buy all you
 - Desktop Resource Show
 
 - Tablet view
+
 ![https://xd.adobe.com/view/c95a7ca8-f7e5-4e4c-8da7-71d63af804b3-9c09/](url)
 
 - Mobile view
+
 ![https://xd.adobe.com/view/9871449c-edb3-4b3b-8d7e-ac3c0788c4ec-cd22/](url)
 
 
