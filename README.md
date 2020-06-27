@@ -25,8 +25,7 @@
 
 ### Description
 
-_**Project Title** is lorem ipsum dolor sit amet. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
-
+_**Sephoney** is a makeup and beauty eccomerce website where you can buy all your beauty needs. Who needs Sephora, when you have Sephoney? 
 <br>
 
 ### Wireframes
@@ -35,10 +34,12 @@ _**Project Title** is lorem ipsum dolor sit amet. Phasellus dapibus fermentum ri
 
 ![Dummy Link](url)
 
+-Webpage Landing
 - https://xd.adobe.com/view/a5a34f61-9465-41a3-80a1-e48f72c8f6c9-f0f0/
 
 ![Dummy Link](url)
 
+- Web Products page
 - https://xd.adobe.com/view/098fb32b-a00b-4730-a64d-911e0f9e0fa4-5cdc/
 
 ![Dummy Link](url)
@@ -50,11 +51,11 @@ _**Project Title** is lorem ipsum dolor sit amet. Phasellus dapibus fermentum ri
 - Desktop Resource Show
 
 ![Dummy Link](url)
-
-- Tablet Resource Index
+-Tablet view
+- https://xd.adobe.com/view/c95a7ca8-f7e5-4e4c-8da7-71d63af804b3-9c09/
 
 ![Dummy Link](url)
-
+- Mobile view
 - https://xd.adobe.com/view/9871449c-edb3-4b3b-8d7e-ac3c0788c4ec-cd22/
 
 <br>
@@ -83,12 +84,45 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 |    API     | Quality Docs? | Documentation | Sample Query                            |
 | :--------: | :-----------: | :------------ | :-------------------------------------- |
-| WeatherAPI |      yes      | _example.com_ | _example.com/mickeymouse?s=movies&t=10_ |
+| Makeup API |      yes      | _https://makeup-api.herokuapp.com/_ | _example.com/mickeymouse?s=movies&t=10_ |
 
 Sample Query Results:
 
 ```json
-
+{
+"id": 114,
+"brand": "covergirl",
+"name": "CoverGirl Outlast Longwear Lipstick",
+"price": "10.99",
+"price_sign": null,
+"currency": null,
+"image_link": "https://d3t32hsnjxo7q6.cloudfront.net/i/2d46e82f21b11f658a4378abcbd1c31b_ra,w158,h184_pa,w158,h184.png",
+"product_link": "https://well.ca/products/covergirl-outlast-longwear-lipstick_105803.html",
+"website_link": "https://well.ca",
+"description": "With CoverGirl Outlast Longwear Lipstick you get both moisture and colour! No need to choose!This long lasting lipstick doesn’t flake or \ncrumble because it’s super-powered with moisture. It'll stays super fresh and \nsuper flexible all day, leaving you with a light weight but very pigmented lip look.",
+"rating": null,
+"category": "lipstick",
+"product_type": "lipstick",
+"tag_list": [ ],
+"created_at": "2016-10-01T18:25:52.547Z",
+"updated_at": "2017-12-27T01:50:37.669Z",
+"product_api_url": "http://makeup-api.herokuapp.com/api/v1/products/114.json",
+"api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/114/original/open-uri20171223-4-fqgm96?1514062257",
+"product_colors": [
+{
+"hex_value": "#C5777E",
+"colour_name": "Phantom Pink"
+},
+{
+"hex_value": "#A1211C",
+"colour_name": "Red Siren"
+},
+{
+"hex_value": "#51122B",
+"colour_name": "Plum Fury"
+}
+]
+},
 ```
 
 <br>
@@ -101,6 +135,7 @@ Sample Query Results:
 | :----------: | :----------------------------------------- |
 |    React     | _Lorem ipsum dolor sit amet, consectetur._ |
 | React Router | _Lorem ipsum dolor sit amet, consectetur._ |
+| React Icons | _Lorem ipsum dolor sit amet, consectetur._ |
 | React Spring | _Lorem ipsum dolor sit amet, consectetur._ |
 
 <br>
