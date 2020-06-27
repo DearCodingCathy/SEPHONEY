@@ -55,7 +55,7 @@ _**Project Title** is lorem ipsum dolor sit amet. Phasellus dapibus fermentum ri
 
 ![Dummy Link](url)
 
-- Mobile Resource Index
+- https://xd.adobe.com/view/9871449c-edb3-4b3b-8d7e-ac3c0788c4ec-cd22/
 
 <br>
 
