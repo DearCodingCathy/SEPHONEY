@@ -25,18 +25,19 @@
 
 ### Description
 
-**Sephoney** is a makeup and beauty eccomerce website where you can buy all your beauty needs. Who needs Sephora, when you have Sephoney? 
+**Sephoney** is a makeup and beauty eccomerce website where you can buy all your beauty needs. Who needs Sephora, when you have Sephoney? Sephoney features a clean design with, user friendly routing capabilty from page to page.
+
 <br>
 
 ### Wireframes
 
 > Use the Wireframes section to display desktop, tablet and mobile views.
 
-- Webpage Landing
+- Desktop Webpage Landing
 
 https://xd.adobe.com/view/a5a34f61-9465-41a3-80a1-e48f72c8f6c9-f0f0/
 
-- Web Products page
+-Desktop Web Products page
 
 https://xd.adobe.com/view/098fb32b-a00b-4730-a64d-911e0f9e0fa4-5cdc/
 
@@ -49,11 +50,11 @@ https://xd.adobe.com/view/098fb32b-a00b-4730-a64d-911e0f9e0fa4-5cdc/
 
 - Desktop Resource Show
 
-- Tablet view
+- Tablet view of Products page
 
 https://xd.adobe.com/view/c95a7ca8-f7e5-4e4c-8da7-71d63af804b3-9c09/
 
-- Mobile view
+- Mobile view of Products page
 
 https://xd.adobe.com/view/9871449c-edb3-4b3b-8d7e-ac3c0788c4ec-cd22/
 
@@ -64,17 +65,20 @@ https://xd.adobe.com/view/9871449c-edb3-4b3b-8d7e-ac3c0788c4ec-cd22/
 
 > The Minimum Viable Product should be a well-planned and easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
 
-_The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+_The **Sephoney** MVP consist of multiple pages and components, that will come together to make a fully functional ecommerce site. For MVP, I will start with creating routs from page to page, there after I will render the data from the API, and esure all components are functional fro there._
 
 <br>
 
 #### MVP Goals
 
-- _Lorem ipsum, dolor sit amet,_
-- _consectetur adipiscing elit._
-- _Phasellus dapibus fermentum risus vitae bibendum._
-- _Integer vel ipsum mollis odio sollicitudin ornare eu vel ex._
-- _etc._
+- Functional routing from page to page
+- Home page with multiple components
+- Navigation Bar
+- All products page
+- Product desription page 
+- My cart page
+- Add to cart functionality for all products.
+- Correct cart totals
 
 <br>
 
@@ -84,7 +88,7 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 |    API     | Quality Docs? | Documentation | Sample Query                            |
 | :--------: | :-----------: | :------------ | :-------------------------------------- |
-| Makeup API |      yes      | _https://makeup-api.herokuapp.com/_ | _example.com/mickeymouse?s=movies&t=10_ |
+| Makeup API |      yes      | _https://makeup-api.herokuapp.com/_ | https://i.imgur.com/eRz6vP5.png |
 
 Sample Query Results:
 
@@ -133,9 +137,9 @@ Sample Query Results:
 
 |   Library    | Description                                |
 | :----------: | :----------------------------------------- |
-|    React     | _Lorem ipsum dolor sit amet, consectetur._ |
-| React Router | _Lorem ipsum dolor sit amet, consectetur._ |
-| React Icons | _Lorem ipsum dolor sit amet, consectetur._ |
+|    React     | To assist with creating React app|
+| React Router | I will utilize React router to assist with functionla routing from page to page|
+| React Icons | I will be using react icons to speak to hthe user with my display rather than text|
 | React Spring | _Lorem ipsum dolor sit amet, consectetur._ |
 
 <br>
@@ -153,9 +157,10 @@ src
       |__ wireframes
 |__ components/
       |__ Header.jsx
+      |__ Footer.jsx
       |__ Hero.jsx
-      |__ Ipsum.jsx
-      |__ Lorem.jsx
+      |__ Products.jsx
+      |__ Cart.jsx
       |__ CTA.jsx
       |__ Footer.jsx
 ```
@@ -172,10 +177,10 @@ src
 |    Header    | functional |   n   |   n   |   n   | _Lorem ipsum dolor sit amet, consectetur._ |
 |  Navigation  | functional |   n   |   n   |   n   | _Lorem ipsum dolor sit amet, consectetur._ |
 |     Home     | functional |   n   |   n   |   y   | _Lorem ipsum dolor sit amet, consectetur._ |
-|    Index     | functional |   n   |   n   |   y   | _Lorem ipsum dolor sit amet, consectetur._ |
-|    Detail    | functional |   n   |   n   |   y   | _Lorem ipsum dolor sit amet, consectetur._ |
-|   Gallery    |   class    |   y   |   n   |   y   | _Lorem ipsum dolor sit amet, consectetur._ |
-| Gallery Card | functional |   n   |   y   |   y   | _Lorem ipsum dolor sit amet, consectetur._ |
+|  Products     | functional |   n   |   n   |   y   | _Lorem ipsum dolor sit amet, consectetur._ |
+| Product detail    | functional |   n   |   n   |   y   | _Lorem ipsum dolor sit amet, consectetur._ |
+|   Cart    |   class    |   y   |   n   |   y   | _Lorem ipsum dolor sit amet, consectetur._ |
+| Search? | functional |   n   |   y   |   y   | _Lorem ipsum dolor sit amet, consectetur._ |
 |    Footer    | functional |   n   |   n   |   n   | _Lorem ipsum dolor sit amet, consectetur._ |
 
 <br>
@@ -188,12 +193,18 @@ src
 
 | Task             | Priority | Estimated Time | Time Invested | Actual Time |
 | ---------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Contact Form |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Lorem Ipsum      |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Lorem Ipsum      |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Lorem Ipsum      |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Lorem Ipsum      |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| TOTAL            |          |     6 hrs      |     3 hrs     |     TBD     |
+| Home Page |    H    |     2 hrs      |     TBD     |     TBD    |
+| All products page (render API data)      |    H     |     3 hrs      |     TBD     |     TBD     |
+| Product Details page      |    H     |     3 hrs      |     TBD     |     TBD     |
+| Header      |    H     |     2 hrs      |     TBD     |     TBD     |
+| Navigation Bar     |    H     |     2 hrs      |     TBD     |     TBD     |
+| Footer      |    H     |     1 hrs      |     TBD     |     TBD     |
+| Cart page     |    H     |     3 hrs      |     TBD     |     TBD     |
+| Add to cart funtionality     |    H     |     4 hrs      |     TBD     |     TBD     |
+| Cart Totals      |    H     |     4 hrs      |     TBD     |     TBD     |
+| Adding CSS      |    H     |     3 hrs      |     TBD     |     TBD     |
+| Advanced CSS     |    H     |     4 hrs      |     TBD     |     TBD     |
+| TOTAL            |          |     6 hrs      |     TBD     |     TBD     |
 
 <br>
 
@@ -201,8 +212,14 @@ src
 
 > Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
 
-- _Lorem ipsum._
-- _Lorem ipsum._
+
+- Products displayed by user search
+- Shop products by brand
+- Shop by type
+- Filters on all products page
+- Adding reviews section for product details page 
+- Adding star ratings to review page
+- Display star ratings on all products page as well
 
 <br>
 
