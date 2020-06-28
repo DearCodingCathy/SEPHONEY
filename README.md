@@ -41,15 +41,6 @@ https://xd.adobe.com/view/a5a34f61-9465-41a3-80a1-e48f72c8f6c9-f0f0/
 
 https://xd.adobe.com/view/098fb32b-a00b-4730-a64d-911e0f9e0fa4-5cdc/
 
-
-![Dummy Link](url)
-
-- Desktop Resource Index
-
-![Dummy Link](url)
-
-- Desktop Resource Show
-
 - Tablet view of Products page
 
 https://xd.adobe.com/view/c95a7ca8-f7e5-4e4c-8da7-71d63af804b3-9c09/
@@ -65,7 +56,7 @@ https://xd.adobe.com/view/9871449c-edb3-4b3b-8d7e-ac3c0788c4ec-cd22/
 
 > The Minimum Viable Product should be a well-planned and easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
 
-_The **Sephoney** MVP consist of multiple pages and components, that will come together to make a fully functional ecommerce site. For MVP, I will start with creating routs from page to page, there after I will render the data from the API, and esure all components are functional fro there._
+_The **Sephoney** MVP consist of multiple pages and components, that will come together to make a fully functional ecommerce site. For MVP, I will start with creating routs from page to page, there after I will render the data from the API, and esure all components are functional from there!_
 
 <br>
 
