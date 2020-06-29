@@ -17,12 +17,6 @@
 
 ## Project Planning
 
-> The Project Planning section should be completed for your project pitch with instructors.
->
-> To ensure correct Markdown, I recommend cloning this wiki and copy/pasting the raw template code.
-
-<br>
-
 ### Description
 
 **Sephoney** is a makeup and beauty eccomerce website where you can buy all your beauty needs. Who needs Sephora, when you have Sephoney? Sephoney features a clean design with, user friendly routing capabilty from page to page.
@@ -195,7 +189,7 @@ src
 | Cart Totals      |    H     |     4 hrs      |     TBD     |     TBD     |
 | Adding CSS      |    H     |     3 hrs      |     TBD     |     TBD     |
 | Advanced CSS     |    H     |     4 hrs      |     TBD     |     TBD     |
-| TOTAL            |          |     6 hrs      |     TBD     |     TBD     |
+| TOTAL            |          |     31 hrs      |     TBD     |     TBD     |
 
 <br>
 
