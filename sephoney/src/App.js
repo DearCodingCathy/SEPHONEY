@@ -15,6 +15,7 @@ import ProductTypes from './ProductType'
 import ProductDetail from './ProductDetail'
 
 
+
 export default class App extends Component {
   constructor() {
     super()
