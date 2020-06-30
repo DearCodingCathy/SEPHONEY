@@ -4,19 +4,26 @@ import { withRouter } from 'react-router';
 
 function ProductDetail(props) {
   const prod = props.products.find(product => product.id === parseInt(props.match.params.id))
-  // console.log(prod)
-  return (
-    <div className='detailContainer'>
-      {/* <h1>{prod.name}</h1>
-      <img src={prod.api_featured_image} alt={prod.image.link} />
 
-      <p>{prod.brand}</p>
-      <p>{prod.product_type}</p>
-      <p>{prod.description}</p>
-      <h5>{prod.price}</h5> */}
+  if (prod) {
+    return (
+      <>
+        <h1 className='detailName'>{prod.name}</h1>
+        <div className='detailContainer'>
+          <img className='detailImg' src={prod.api_featured_image} alt={prod.image_link} />
 
-    </div>
-  )
+          <div className='detailInfo'>
+            <p> <b>Brand:</b> {prod.brand}</p>
+            <p> <b>Product Type:</b> {prod.product_type}</p>
+            <p> <b>Description:</b> {prod.description}</p>
+            <h5> <b>Price:</b> {prod.price}</h5>
+          </div>
+        </div>
+      </>
+    )
+  } else {
+    return <h1 className='loadingHelp'>Loading ...</h1>
+  }
 }
 
 export default withRouter(ProductDetail)

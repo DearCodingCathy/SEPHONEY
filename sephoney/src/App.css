@@ -43,3 +43,25 @@ a {
   text-decoration: none;
   font-weight: lighter;
 }
+
+.detailContainer {
+display: flex;
+width: 800px;
+margin: 10px auto;
+}
+
+.detailInfo {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.detailImg {
+  width: 300px;
+  height: 300px;
+}
+
+/* Needto fix */
+.detailName {
+  margin: 10px auto;
+}
