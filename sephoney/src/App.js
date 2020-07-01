@@ -26,6 +26,8 @@ export default class App extends Component {
 
     this.state = {
       products: [],
+      myCart: [],
+
     }
   }
 
@@ -35,20 +37,23 @@ export default class App extends Component {
       const response = await axios(`http://makeup-api.herokuapp.com/api/v1/products.json`)
       console.log(response.data)
 
-      response ?
+      this.setState({
+        products: response.data
+      })
 
-        this.setState({
-          products: response.data
-        })
-        :
-        this.setState({
-          products: Response
-        })
+
 
     } catch (error) {
-      console.log(`${error}`)
+      this.setState({
+        products: Response
+      })
     }
+  }
 
+  handleClick = (item) => {
+    this.setState(prevState => ({
+      myCart: [...prevState.myCart, item]
+    }))
   }
 
   render() {
@@ -71,11 +76,11 @@ export default class App extends Component {
         </Route>
 
         <Route path='/cart'>
-          <Cart products={this.state.products} />
+          <Cart products={this.state.products} cart={this.state.myCart} />
         </Route>
 
         <Route path='/allproducts'>
-          <Products products={this.state.products} />
+          <Products products={this.state.products} cart={this.state.myCart} func={this.handleClick} />
         </Route>
 
         <Route path='/allbrands'>
@@ -87,7 +92,7 @@ export default class App extends Component {
         </Route>
 
         <Route path='/product/:id'>
-          <ProductDetail products={this.state.products} />
+          <ProductDetail products={this.state.products} cart={this.state.myCart} func={this.handleClick} />
         </Route>
 
         <Route>
