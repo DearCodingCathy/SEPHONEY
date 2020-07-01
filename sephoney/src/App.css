@@ -1,15 +1,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
-.navigation {
-  display: flex;
-  justify-content: space-around;
-}
 
-.header {
-  display: flex;
-  justify-content: space-around;
-}
 
 .productImg {
   width: 100px;

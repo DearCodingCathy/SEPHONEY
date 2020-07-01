@@ -1,18 +1,22 @@
 import React, { Component } from 'react';
-import { Route } from 'react-router-dom'
+import { Route } from 'react-router-dom';
 import axios from 'axios';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 import './App.css';
-import Header from './Header'
-import Footer from './Footer'
-import Home from './Home'
-import Register from './Register'
-import Cart from './Cart'
-import Products from './Products'
-import Nav from './Nav'
-import Brands from './Brands'
-import ProductTypes from './ProductType'
-import ProductDetail from './ProductDetail'
+import Response from './Response.json';
+import Header from './Header';
+import Footer from './Footer';
+import Home from './Home';
+import Register from './Register';
+import Cart from './Cart';
+import Products from './Products';
+import Nav from './Nav';
+import Brands from './Brands';
+import ProductTypes from './ProductType';
+import ProductDetail from './ProductDetail';
 
 
 
@@ -31,9 +35,15 @@ export default class App extends Component {
       const response = await axios(`http://makeup-api.herokuapp.com/api/v1/products.json`)
       console.log(response.data)
 
-      this.setState({
-        products: response.data
-      })
+      response ?
+
+        this.setState({
+          products: response.data
+        })
+        :
+        this.setState({
+          products: Response
+        })
 
     } catch (error) {
       console.log(`${error}`)
