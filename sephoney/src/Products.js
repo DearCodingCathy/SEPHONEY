@@ -16,10 +16,9 @@ export default function Products(props) {
 
 
 
-          <button className='cart-btn' onClick={() => { props.func(product) }}
+          <Link to='/cart'><button className='cart-btn' onClick={() => { props.func(product) }}
           >Add to Cart
-            
-          </button>
+          </button></Link>
 
 
 
