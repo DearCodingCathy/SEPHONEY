@@ -25,8 +25,22 @@ margin: 10px;
   margin: 20px auto;
 }
 
+.home-container {
+position: relative;
+width:100%;
+}
+
 .homeImg {
   width: 100%;
+  height: auto;
+}
+
+.home-container .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+
 }
 
 .search {
@@ -73,10 +87,10 @@ margin: 10px auto;
   border-color: transparent;
   transition: all 0.5s linear;
 }
- .card:hover {
-   border: 0.04rem solid rgba(0, 0, 0, 0.2);
-   box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
- }
+.card:hover {
+border: 0.04rem solid rgba(0, 0, 0, 0.2);
+box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
+}
 .card-container{
   width: 700px;
   margin: 20px auto;
@@ -94,12 +108,11 @@ margin: 10px auto;
 }
 
 .cart-btn {
- background-color: rgb(46, 46, 46);
- color: white;
- border-radius: 10px;
+background-color: rgb(46, 46, 46);
+color: white;
+border-radius: 10px;
 width: 100%; 
 border: 0.5px transparent;
-
 }
 
 .items-container {

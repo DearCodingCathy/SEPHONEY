@@ -39,17 +39,25 @@ export default class App extends Component {
   async componentDidMount() {
 
     try {
-      const response = await axios(`http://makeup-api.herokuapp.com/api/v1/products.json`)
-      console.log(response.data)
+      if (localStorage.getItem('data')) {
+        const products = localStorage.getItem('data')
+        this.setState({
+          products: JSON.parse(products)
+        })
+      } else {
+        const response = await axios(`http://makeup-api.herokuapp.com/api/v1/products.json`)
+        console.log(response.data)
 
-      const productQ = response.data.map((product) => {
-        product.quantity = 1
-        return (product)
-      })
+        const productQ = response.data.map((product) => {
+          product.quantity = 1
+          return (product)
+        })
 
-      this.setState({
-        products: productQ
-      })
+        this.setState({
+          products: productQ
+        })
+        localStorage.setItem('data', JSON.stringify(productQ))
+      }
 
     } catch (error) {
       const productQ = Response.map((product) => {

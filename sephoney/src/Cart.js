@@ -25,6 +25,8 @@ export default function (props) {
           ))}
         </div>
 
+        <hr />
+
         <div className='summary'>
           <h3>order summary</h3>
           <div>
@@ -42,10 +44,7 @@ export default function (props) {
 
           <hr />
           <h3>total <span className='right'>${props.ordertotal.toFixed(2)}</span></h3>
-
         </div>
-
-
       </>
     )
   } else {
