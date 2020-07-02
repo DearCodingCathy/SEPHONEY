@@ -3,14 +3,34 @@ import { Link } from 'react-router-dom'
 
 export default function Nav() {
   return (
-    <div className='d-flex justify-content-between navbar-expand{-sm|-md|-lg|-xl} nav-pills nav-fill '>
-      <Link className='text-dark text-muted text-decoration-none' to='/allproducts'><h3>SHOP ALL</h3></Link>
-      <Link className='text-dark text-muted text-decoration-none' to='/allbrands'><h3>BRANDS</h3></Link>
-      <Link className='text-dark text-muted text-decoration-none' to='producttypes'><h3>PRODUCT TYPE</h3></Link>
-      {/* <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form> */}
-    </div>
+    <>
+      <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample04">
+
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <Link to='/' class="nav-link">Home <span class="sr-only">(current)</span></Link>
+            </li>
+            <li class="nav-item active">
+              <Link to='/allproducts' class="nav-link" >Shop All</Link>
+            </li>
+            <li class="nav-item active">
+              <Link to='/allbrands' class="nav-link" tabindex="-1">Brands</Link>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link">Product Type</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-md-0">
+            <input class="form-control" type="text" placeholder="Search" />
+          </form>
+        </div>
+      </nav>
+    </>
   )
 }
