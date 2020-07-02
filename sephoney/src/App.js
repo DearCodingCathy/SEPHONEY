@@ -46,17 +46,12 @@ export default class App extends Component {
         product.quantity = 1
         return (product)
       })
-      console.log(productQ)
 
       this.setState({
         products: productQ
-
       })
-      console.log(this.state.products)
-
 
     } catch (error) {
-
       const productQ = Response.map((product) => {
         product.quantity = 1
         return (product)
@@ -71,24 +66,20 @@ export default class App extends Component {
   handleClick = (item) => {
     this.setState(prevState => ({
       myCart: [...prevState.myCart, item]
-    }))
+    }), this.calcTotal)
   }
 
   updateQuantity = (quantity, index) => {
-    console.log(this.state.myCart)
     let oldItems = this.state.myCart.slice()
-    console.log(oldItems)
     let item = oldItems[index]
-    console.log(item)
     item.quantity = item.quantity + quantity < 0 ? 0 : item.quantity + quantity
-    console.log(this.state.quantity)
 
     const updatedCart = this.state.myCart
     updatedCart[index] = item
 
     this.setState({
       myCart: updatedCart
-    })
+    }, this.calcTotal)
   }
 
   calcTotal() {
@@ -107,10 +98,6 @@ export default class App extends Component {
       orderTotal,
     })
   }
-
-
-
-
 
 
   render() {
@@ -133,7 +120,7 @@ export default class App extends Component {
         </Route>
 
         <Route path='/cart'>
-          <Cart products={this.state.products} cart={this.state.myCart} qtyfunction={this.updateQuantity} qty={this.state.quantity} />
+          <Cart products={this.state.products} cart={this.state.myCart} qtyfunction={this.updateQuantity} qty={this.state.quantity} subtotal={this.state.subtotal} ordertotal={this.state.orderTotal} taxtotal={this.state.taxTotal} />
         </Route>
 
         <Route path='/allproducts'>
