@@ -27,7 +27,12 @@ export default class App extends Component {
     this.state = {
       products: [],
       myCart: [],
-
+      subtotal: 0,
+      taxPercent: 5,
+      taxTotal: 0,
+      deliveryFee: 0,
+      orderTotal: 0,
+      quantity: 1,
     }
   }
 
@@ -37,15 +42,28 @@ export default class App extends Component {
       const response = await axios(`http://makeup-api.herokuapp.com/api/v1/products.json`)
       console.log(response.data)
 
-      this.setState({
-        products: response.data
+      const productQ = response.data.map((product) => {
+        product.quantity = 1
+        return (product)
       })
+      console.log(productQ)
 
+      this.setState({
+        products: productQ
+
+      })
+      console.log(this.state.products)
 
 
     } catch (error) {
+
+      const productQ = Response.map((product) => {
+        product.quantity = 1
+        return (product)
+      })
+
       this.setState({
-        products: Response
+        products: productQ
       })
     }
   }
@@ -55,6 +73,45 @@ export default class App extends Component {
       myCart: [...prevState.myCart, item]
     }))
   }
+
+  updateQuantity = (quantity, index) => {
+    console.log(this.state.myCart)
+    let oldItems = this.state.myCart.slice()
+    console.log(oldItems)
+    let item = oldItems[index]
+    console.log(item)
+    item.quantity = item.quantity + quantity < 0 ? 0 : item.quantity + quantity
+    console.log(this.state.quantity)
+
+    const updatedCart = this.state.myCart
+    updatedCart[index] = item
+
+    this.setState({
+      myCart: updatedCart
+    })
+  }
+
+  calcTotal() {
+    let { myCart, taxPercent, deliveryFee } = this.state
+    let subtotal = myCart
+      .filter(item => item.quantity > 0)
+      .map(item => item.price * item.quantity)
+      .reduce((prev, curr) => prev + curr, 0)
+
+    let taxTotal = Math.round((subtotal * (taxPercent / 100)) * 100) / 100
+    let orderTotal = subtotal + taxTotal + deliveryFee
+
+    this.setState({
+      subtotal,
+      taxTotal,
+      orderTotal,
+    })
+  }
+
+
+
+
+
 
   render() {
     return (
@@ -76,7 +133,7 @@ export default class App extends Component {
         </Route>
 
         <Route path='/cart'>
-          <Cart products={this.state.products} cart={this.state.myCart} />
+          <Cart products={this.state.products} cart={this.state.myCart} qtyfunction={this.updateQuantity} qty={this.state.quantity} />
         </Route>
 
         <Route path='/allproducts'>

@@ -20,7 +20,6 @@ function ProductDetail(props) {
 
             <button className='cart-btn' onClick={() => props.func(prod)}
             > Add to Cart
-            < i className='fas fa-cart-plus' />
             </button>
 
           </div>

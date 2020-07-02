@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 
 export default function Brands(props) {
   // const uniqueBrands = props.product.filter((item, index) => props.product.indexOf(item) !== index)
