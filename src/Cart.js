@@ -19,10 +19,10 @@ export default function (props) {
 
               <h6 className='align-self-center'><b>{item.name}</b></h6>
 
-              <button className='align-self-center' onClick={e => props.qtyfunction(-1, index)}>-</button>
+              <button className='align-self-center qty-btn' onClick={e => props.qtyfunction(-1, index)}>-</button>
               <span className='align-self-center'>{item.quantity}</span>
 
-              <button className='align-self-center' onClick={e => props.qtyfunction(1, index)}>+</button>
+              <button className='align-self-center qty-btn' onClick={e => props.qtyfunction(1, index)}>+</button>
               <h4 className='align-self-center'>${item.price}</h4>
             </div>
           ))}

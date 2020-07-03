@@ -149,14 +149,6 @@ export default class App extends Component {
           <ProductDetail products={this.state.products} cart={this.state.myCart} func={this.handleClick} />
         </Route>
 
-        <Route>
-
-        </Route>
-
-        <Route>
-
-        </Route>
-
         <Route path='/'>
           <Footer />
         </Route>
