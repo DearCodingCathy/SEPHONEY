@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 export default function Products(props) {
   return (
     <div className='card-container'>
-      {/* <div className='col-9 mx-auto col-md-6 col-lg-3 my-3'> */}
       {props.products.map((product) =>
 
         <div className='card m-2' key={product.id}>
