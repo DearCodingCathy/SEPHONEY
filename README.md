@@ -17,9 +17,11 @@
 
 ## Project Planning
 
+https://nervous-hypatia-2e65ec.netlify.app/
+
 ### Description
 
-**Sephoney** is a makeup and beauty eccomerce website where you can buy all your beauty needs. Who needs Sephora, when you have Sephoney? Sephoney features a clean design with, user friendly routing capabilty from page to page.
+**Sephoney** is a makeup and beauty eccomerce website where you can buy all your beauty needs. Who needs Sephora, when you have Sephoney? Sephoney features a clean design with, user friendly routing capability from page to page.
 
 <br>
 
@@ -58,9 +60,9 @@ _The **Sephoney** MVP consist of multiple pages and components, that will come t
 
 - Functional routing from page to page
 - Home page with multiple components
-- Navigation Bar
+- Responsive navigation Bar
 - All products page
-- Product desription page 
+- Product detail page 
 - My cart page
 - Add to cart functionality for all products.
 - Correct cart totals
@@ -123,9 +125,8 @@ Sample Query Results:
 |   Library    | Description                                |
 | :----------: | :----------------------------------------- |
 |    React     | To assist with creating React app|
-| React Router | I will utilize React router to assist with functionla routing from page to page|
-| React Icons | I will be using react icons to speak to hthe user with my display rather than text|
-| React Spring | _Lorem ipsum dolor sit amet, consectetur._ |
+| React Router | I will utilize React router to assist with functional routing from page to page|
+| React Bootstrap | For easy styling |
 
 <br>
 
@@ -143,10 +144,12 @@ src
 |__ components/
       |__ Header.jsx
       |__ Footer.jsx
-      |__ Hero.jsx
+      |__ Nav.jsx
       |__ Products.jsx
       |__ Cart.jsx
-      |__ CTA.jsx
+      |__ ProductDetail.jsx
+      |__ ProductType.jsx
+      |__ Register.jsx
       |__ Footer.jsx
 ```
 
@@ -158,15 +161,14 @@ src
 
 |  Component   |    Type    | state | props | hooks | Description                                |
 | :----------: | :--------: | :---: | :---: | :---: | :----------------------------------------- |
-|    App.js    |   class    |   y   |   n   |   n   | _Lorem ipsum dolor sit amet, consectetur._ |
-|    Header    | functional |   n   |   n   |   n   | _Lorem ipsum dolor sit amet, consectetur._ |
-|  Navigation  | functional |   n   |   n   |   n   | _Lorem ipsum dolor sit amet, consectetur._ |
-|     Home     | functional |   n   |   n   |   y   | _Lorem ipsum dolor sit amet, consectetur._ |
-|  Products     | functional |   n   |   n   |   y   | _Lorem ipsum dolor sit amet, consectetur._ |
-| Product detail    | functional |   n   |   n   |   y   | _Lorem ipsum dolor sit amet, consectetur._ |
-|   Cart    |   class    |   y   |   n   |   y   | _Lorem ipsum dolor sit amet, consectetur._ |
-| Search? | functional |   n   |   y   |   y   | _Lorem ipsum dolor sit amet, consectetur._ |
-|    Footer    | functional |   n   |   n   |   n   | _Lorem ipsum dolor sit amet, consectetur._ |
+|    App.js    |   class    |   y   |   n   |   n   | Class based parent component used to pass API information down to all children components |
+|    Header    | functional |   n   |   n   |   n   | Header holds three main links |
+|  Navigation  | functional |   n   |   n   |   n   | Responsive navigation bar that hold 4 links |
+|     Home     | functional |   n   |   n   |   n   | This page holds a link to the main shopping page |
+|  Products     | functional |   n   |   n   |   n   | The products page is the bulk of the application, as it holds all of the products sold on Sephoney. |
+| Product detail    | functional |   n   |   n   |   n   | Click the product image to get a full detailed view of the product, and all its information. |
+|   Cart    |   functional    |   y   |   n   |   n   | Fully functional Cart that calculates subtotal, tax, and total.|
+|    Footer    | functional |   n   |   n   |   n   | Functional footer component|
 
 <br>
 
@@ -178,17 +180,17 @@ src
 
 | Task             | Priority | Estimated Time | Time Invested | Actual Time |
 | ---------------- | :------: | :------------: | :-----------: | :---------: |
-| Home Page |    H    |     2 hrs      |     TBD     |     TBD    |
-| All products page (render API data)      |    H     |     3 hrs      |     TBD     |     TBD     |
-| Product Details page      |    H     |     3 hrs      |     TBD     |     TBD     |
-| Header      |    H     |     2 hrs      |     TBD     |     TBD     |
-| Navigation Bar     |    H     |     2 hrs      |     TBD     |     TBD     |
-| Footer      |    H     |     1 hrs      |     TBD     |     TBD     |
-| Cart page     |    H     |     3 hrs      |     TBD     |     TBD     |
-| Add to cart funtionality     |    H     |     4 hrs      |     TBD     |     TBD     |
-| Cart Totals      |    H     |     4 hrs      |     TBD     |     TBD     |
-| Adding CSS      |    H     |     3 hrs      |     TBD     |     TBD     |
-| Advanced CSS     |    H     |     4 hrs      |     TBD     |     TBD     |
+| Home Page |    H    |     2 hrs      |     1 hr   |     1 hr   |
+| All products page (render API data)      |    H     |     3 hrs      |     4 hrs     |     4hrs     |
+| Product Details page      |    H     |     3 hrs      |     3.5 hrs     |     3.5 hrs     |
+| Header      |    H     |     2 hrs      |     1 hrs     |     1 hrs     |
+| Navigation Bar     |    H     |     2 hrs      |     4 hrs     |     4 hrs     |
+| Footer      |    H     |     1 hrs      |     1 hr     |     1 hr     |
+| Cart page     |    H     |     3 hrs      |     2 hrs     |     2 hrs     |
+| Add to cart funtionality     |    H     |     4 hrs      |     3 hrs     |     3hrs     |
+| Cart Totals      |    H     |     4 hrs      |     2 hrs     |     2 hrs     |
+| Adding CSS      |    H     |     3 hrs      |     2 hrs     |     2 hrs     |
+| Learning & Implementing React Bootstrap    |    H     |     4 hrs      |     4 hrs     |     4 hrs     |
 | TOTAL            |          |     31 hrs      |     TBD     |     TBD     |
 
 <br>
@@ -216,8 +218,46 @@ src
 
 ### Code Showcase
 
-> Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
+I struggled quite a bit in the beginning because my API was not stable. I am proud of the code below, because I was able to not only use JSON data when the API failed, but I also learned a bit about local storage, to make my overall app faster. This helped cut down a 30 load time to a 5 second load time!
+
+```
+async componentDidMount() {
+
+    try {
+      if (localStorage.getItem('data')) {
+        const products = localStorage.getItem('data')
+        this.setState({
+          products: JSON.parse(products),
+
+        })
+      } else {
+        const response = await axios(`http://makeup-api.herokuapp.com/api/v1/products.json`)
+        console.log(response.data)
+
+        const productQ = response.data.map((product) => {
+          product.quantity = 1
+          return (product)
+        })
+
+        this.setState({
+          products: productQ,
+        })
+        localStorage.setItem('data', JSON.stringify(productQ))
+      }
+
+    } catch (error) {
+      const productQ = Response.map((product) => {
+        product.quantity = 1
+        return (product)
+      })
+
+      this.setState({
+        products: productQ,
+      })
+    }
+  }
+```
 
 ### Code Issues & Resolutions
 
-> Use this section to list of all major issues encountered and their resolution, if you'd like.
+My API did not have quantity associated with it at all. This caused issues because I was initially setting quantity in state, which unfortunately applied changes to all the products. To resolve this, I learned how to augment my api results after they has been received. This was a game changer for me! 
