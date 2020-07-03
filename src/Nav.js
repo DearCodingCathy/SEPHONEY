@@ -6,12 +6,7 @@ import { Nav, Navbar, NavDropdown, Form, FormControl, Button } from 'react-boots
 export default function Navigation() {
   return (
     <>
-
-
-
       <Navbar collapseOnSelect expand="md" bg="light" variant="light" sticky="top">
-
-        {/* <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand> */}
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
@@ -24,7 +19,6 @@ export default function Navigation() {
             <Nav.Link href="/producttypes">Product Types</Nav.Link>
             <Form inline>
               <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-              {/* <Button variant="outline-primary">Search</Button> */}
             </Form>
           </Nav>
         </Navbar.Collapse>
