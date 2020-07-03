@@ -4,33 +4,55 @@ import { Link } from 'react-router-dom'
 export default function Nav() {
   return (
     <>
-      <nav class="navbar navbar-expand-md navbar-light bg-light">
-        <a class="navbar-brand" href="#"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+      <nav className="navbar navbar-expand-md navbar-light bg-light sticky-top">
+
+
+        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseTarget" aria-controls="collapseTarget" aria-expanded="false" aria-label="Toggle navigation">
+
+
+          <span className="navbar-toggler-icon"></span>
+
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarsExample04">
+        <div className="collapse navbar-collapse" id="collapseTarget">
 
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <Link to='/' class="nav-link">Home <span class="sr-only">(current)</span></Link>
+
+          <ul className="navbar-nav mr-auto">
+
+            <li className="nav-item active">
+
+              <Link to='/' className="nav-link">Home <span className="sr-only">(current)</span></Link>
+
+
             </li>
-            <li class="nav-item active">
-              <Link to='/allproducts' class="nav-link" >Shop All</Link>
+            <li className="nav-item active">
+
+              <Link to='/allproducts' className="nav-link" >Shop All</Link>
+
             </li>
-            <li class="nav-item active">
-              <Link to='/allbrands' class="nav-link" tabindex="-1">Brands</Link>
+            <li className="nav-item active">
+
+              <Link to='/allbrands' className="nav-link" tabIndex="-1" aria-disabled="true">Brands</Link>
+
             </li>
-            <li class="nav-item active">
-              <a class="nav-link">Product Type</a>
+            <li className="nav-item active">
+
+              <Link to='/producttypes' className="nav-link">Product Type</Link>
+
             </li>
           </ul>
-          <form class="form-inline my-2 my-md-0">
-            <input class="form-control" type="text" placeholder="Search" />
+          <form className="form-inline my-2 my-md-0">
+
+            <input className="form-control" type="text" placeholder="Search" />
+
           </form>
         </div>
       </nav>
+
+
+
+
+
     </>
   )
 }

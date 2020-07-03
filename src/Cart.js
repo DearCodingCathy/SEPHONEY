@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom'
 export default function (props) {
 
 
-  if (props.cart) {
+  if (props.cart.length !== 0) {
     return (
-      <>
+      <div className='order-container'>
         <div className='items-container'>
           {props.cart.map((item, index) => (
             <div className='row inner-container'>
@@ -30,7 +30,7 @@ export default function (props) {
         <div className='summary'>
           <h3>order summary</h3>
           <div>
-            <strong>subtotal</strong>
+            <strong>subtotal: </strong>
 
             {/* <small> ({numItems} items)</small> */}
 
@@ -38,16 +38,23 @@ export default function (props) {
           </div>
 
           <div>
-            <strong>estimated tax</strong>
+            <strong>estimated tax: </strong>
             <strong className='right'>${props.taxtotal.toFixed(2)}</strong>
           </div>
 
           <hr />
-          <h3>total <span className='right'>${props.ordertotal.toFixed(2)}</span></h3>
+          <div className='d-flex'>
+            <h3>Total: <span className='right'>${props.ordertotal.toFixed(2)}</span></h3>
+            <button className='btn btn-secondary'>Checkout Now</button>
+          </div>
         </div>
-      </>
+      </div>
     )
   } else {
-    return <h1> Your Cart is currently empty</h1>
+    return (
+      <div className='d-flex justify-content-center'>
+        <h1> Your Cart is currently empty...</h1>
+      </div>
+    )
   }
 }

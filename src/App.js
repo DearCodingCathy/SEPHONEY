@@ -42,7 +42,8 @@ export default class App extends Component {
       if (localStorage.getItem('data')) {
         const products = localStorage.getItem('data')
         this.setState({
-          products: JSON.parse(products)
+          products: JSON.parse(products),
+
         })
       } else {
         const response = await axios(`http://makeup-api.herokuapp.com/api/v1/products.json`)
@@ -54,7 +55,7 @@ export default class App extends Component {
         })
 
         this.setState({
-          products: productQ
+          products: productQ,
         })
         localStorage.setItem('data', JSON.stringify(productQ))
       }
@@ -66,7 +67,7 @@ export default class App extends Component {
       })
 
       this.setState({
-        products: productQ
+        products: productQ,
       })
     }
   }
