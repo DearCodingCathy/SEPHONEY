@@ -27,8 +27,6 @@ https://nervous-hypatia-2e65ec.netlify.app/
 
 ### Wireframes
 
-> Use the Wireframes section to display desktop, tablet and mobile views.
-
 - Desktop Webpage Landing
 
 https://xd.adobe.com/view/a5a34f61-9465-41a3-80a1-e48f72c8f6c9-f0f0/
@@ -49,8 +47,6 @@ https://xd.adobe.com/view/9871449c-edb3-4b3b-8d7e-ac3c0788c4ec-cd22/
 <br>
 
 ### MVP
-
-> The Minimum Viable Product should be a well-planned and easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
 
 _The **Sephoney** MVP consist of multiple pages and components, that will come together to make a fully functional ecommerce site. For MVP, I will start with creating routs from page to page, there after I will render the data from the API, and esure all components are functional from there!_
 
@@ -120,8 +116,6 @@ Sample Query Results:
 
 #### MVP Libraries & Dependencies
 
-> Use this section to list the key supporting libraries and their role in the project.
-
 |   Library    | Description                                |
 | :----------: | :----------------------------------------- |
 |    React     | To assist with creating React app|
@@ -132,15 +126,9 @@ Sample Query Results:
 
 #### MVP Components
 
-> Use this section to define your React components and the data architecture of your app.
 
 ```
 src
-|__ assets/
-      |__ data-tests
-      |__ fonts
-      |__ images
-      |__ wireframes
 |__ components/
       |__ Header.jsx
       |__ Footer.jsx
@@ -191,14 +179,11 @@ src
 | Cart Totals      |    H     |     4 hrs      |     2 hrs     |     2 hrs     |
 | Adding CSS      |    H     |     3 hrs      |     2 hrs     |     2 hrs     |
 | Learning & Implementing React Bootstrap    |    H     |     4 hrs      |     4 hrs     |     4 hrs     |
-| TOTAL            |          |     31 hrs      |     27.5     |     27.5     |
+| TOTAL            |          |     32 hrs      |     29 hrs    |     29 hrs     |
 
 <br>
 
 ### Post-MVP
-
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
-
 
 - Products displayed by user search
 - Shop products by brand
@@ -214,7 +199,6 @@ src
 
 ## Project Delivery
 
-> The Project Delivery section should be completed as your work on your project.
 
 ### Code Showcase
 
