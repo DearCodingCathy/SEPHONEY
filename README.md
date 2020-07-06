@@ -186,8 +186,8 @@ src
 | Header      |    H     |     2 hrs      |     1 hrs     |     1 hrs     |
 | Navigation Bar     |    H     |     2 hrs      |     4 hrs     |     4 hrs     |
 | Footer      |    H     |     1 hrs      |     1 hr     |     1 hr     |
-| Cart page     |    H     |     3 hrs      |     2 hrs     |     2 hrs     |
-| Add to cart funtionality     |    H     |     4 hrs      |     3 hrs     |     3hrs     |
+| Cart page     |    H     |     4 hrs      |     3 hrs     |     3 hrs     |
+| Add to cart funtionality     |    H     |     4 hrs      |     3.5 hrs     |     3.5 hrs     |
 | Cart Totals      |    H     |     4 hrs      |     2 hrs     |     2 hrs     |
 | Adding CSS      |    H     |     3 hrs      |     2 hrs     |     2 hrs     |
 | Learning & Implementing React Bootstrap    |    H     |     4 hrs      |     4 hrs     |     4 hrs     |
