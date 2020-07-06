@@ -185,13 +185,17 @@ src
 
 ### Post-MVP
 
+- Load more functionality
 - Products displayed by user search
 - Shop products by brand
-- Shop by type
-- Filters on all products page
+- Shop by product type
+- Filters on all product pages
 - Adding reviews section for product details page 
 - Adding star ratings to review page
 - Display star ratings on all products page as well
+- Remove from cart functionality
+- Product sold out functionality
+
 
 <br>
 
