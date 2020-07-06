@@ -191,7 +191,7 @@ src
 | Cart Totals      |    H     |     4 hrs      |     2 hrs     |     2 hrs     |
 | Adding CSS      |    H     |     3 hrs      |     2 hrs     |     2 hrs     |
 | Learning & Implementing React Bootstrap    |    H     |     4 hrs      |     4 hrs     |     4 hrs     |
-| TOTAL            |          |     31 hrs      |     TBD     |     TBD     |
+| TOTAL            |          |     31 hrs      |     27.5     |     27.5     |
 
 <br>
 
